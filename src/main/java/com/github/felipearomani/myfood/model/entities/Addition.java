@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Objects;
 
 @Getter
 @Setter
@@ -23,17 +24,28 @@ public class Addition {
     @JoinColumn(name = "food_id")
     private Food food;
 
-    @Column(columnDefinition = "boolean default false")
-    private Boolean required;
-
     @Column(columnDefinition = "Decimal(10,2) default 00.00")
     private BigDecimal price;
 
     @Builder
-    public Addition(String name, Food food, Boolean required, BigDecimal price) {
+    public Addition(String name, Food food, BigDecimal price) {
         this.name = name;
         this.food = food;
-        this.required = required;
         this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Addition addition = (Addition) o;
+        return Objects.equals(id, addition.id) &&
+                Objects.equals(name, addition.name);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, name);
     }
 }

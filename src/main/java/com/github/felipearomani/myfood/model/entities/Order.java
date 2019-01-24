@@ -48,6 +48,4 @@ public class Order {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
-
-
 }

@@ -1,5 +1,6 @@
 package com.github.felipearomani.myfood.model.entities;
 
+import com.github.felipearomani.myfood.model.entities.food.Food;
 import lombok.*;
 
 import javax.persistence.*;

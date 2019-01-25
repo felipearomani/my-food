@@ -5,30 +5,30 @@
 
 INSERT INTO FOODS VALUES (
   1,
-  'MCCHICKEN',
   'Frango empanado e dourado com molho suave e cremoso, acompanhado de alface crocante num pão com gergelim.',
+  'MCCHICKEN',
   '14.90'
 );
 
 INSERT INTO FOODS VALUES (
   2,
-  'BIG TASTY',
   'O maior hambúrguer de carne 100% bovina do McDonald’s, 3 deliciosas fatias de queijo, tomate, alface crocante, cebola e o saboroso molho tasty',
+  'BIG TASTY',
   '21.90'
 );
 
 INSERT INTO FOODS VALUES (
   3,
-  'CHEDDAR MCMELT',
   'Feito com carne bovina, delicioso queijo tipo cheddar derretido, cebola grelhada ao molho shoyu e para completar um pão escuro com gergelim.',
+  'CHEDDAR MCMELT',
   '14.90'
 );
 
 
 INSERT INTO FOODS VALUES (
   4,
-  'BIG MAC',
   'Dois hambúrgueres, alface, queijo e molho especial, cebola e picles num pão com gergelim.',
+  'BIG MAC',
   '18.90'
 );
 

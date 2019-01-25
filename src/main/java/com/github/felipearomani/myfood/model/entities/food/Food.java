@@ -1,10 +1,11 @@
-package com.github.felipearomani.myfood.model.entities;
+package com.github.felipearomani.myfood.model.entities.food;
 
+import com.github.felipearomani.myfood.model.entities.Addition;
+import com.github.felipearomani.myfood.model.entities.Option;
 import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;

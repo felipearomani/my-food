@@ -1,5 +1,6 @@
 package com.github.felipearomani.myfood.model.entities;
 
+import com.github.felipearomani.myfood.model.entities.food.Food;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

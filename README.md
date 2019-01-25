@@ -35,22 +35,26 @@ Execute "mvn test"
         {
             "name": "MCCHICKEN",
             "id": "1",
-            "description": "Frango empanado e dourado com molho suave e cremoso, acompanhado de alface crocante num pão com gergelim."
+            "description": "Frango empanado e dourado com molho suave e cremoso, acompanhado de alface crocante num pão com gergelim.",
+            "price": 14.9
         },
         {
             "name": "BIG TASTY",
             "id": "2",
-            "description": "O maior hambúrguer de carne 100% bovina do McDonald’s, 3 deliciosas fatias de queijo, tomate, alface crocante, cebola e o saboroso molho tasty"
+            "description": "O maior hambúrguer de carne 100% bovina do McDonald’s, 3 deliciosas fatias de queijo, tomate, alface crocante, cebola e o saboroso molho tasty",
+            "price": 21.9
         },
         {
             "name": "CHEDDAR MCMELT",
             "id": "3",
-            "description": "Feito com carne bovina, delicioso queijo tipo cheddar derretido, cebola grelhada ao molho shoyu e para completar um pão escuro com gergelim."
+            "description": "Feito com carne bovina, delicioso queijo tipo cheddar derretido, cebola grelhada ao molho shoyu e para completar um pão escuro com gergelim.",
+            "price": 14.9
         },
         {
             "name": "BIG MAC",
             "id": "4",
-            "description": "Dois hambúrgueres, alface, queijo e molho especial, cebola e picles num pão com gergelim."
+            "description": "Dois hambúrgueres, alface, queijo e molho especial, cebola e picles num pão com gergelim.",
+            "price": 18.9
         }
     ],
     "pageable": {
@@ -69,8 +73,8 @@ Execute "mvn test"
     "totalPages": 1,
     "last": true,
     "size": 20,
-    "numberOfElements": 4,
     "first": true,
+    "numberOfElements": 4,
     "number": 0,
     "sort": {
         "sorted": false,

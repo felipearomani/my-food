@@ -36,6 +36,9 @@ public class Order {
     )
     private List<Ingredient> customIngredients;
 
+    @Enumerated(EnumType.STRING)
+    private Type type;
+
     @ManyToOne
     @JoinColumn(name = "shopping_cart_id")
     private ShoppingCart shoppingCart;
@@ -45,4 +48,8 @@ public class Order {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    public enum Type {
+        MENU_ITEM, CUSTOM;
+    }
 }

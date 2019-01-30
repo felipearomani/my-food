@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { MyFoodApplication.class })
 @WebAppConfiguration
-public class FoodListControllerTest {
+public class MenuOptionListControllerTest {
 
     @Autowired
     private WebApplicationContext applicationContext;

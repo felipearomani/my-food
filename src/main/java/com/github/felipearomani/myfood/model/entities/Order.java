@@ -1,6 +1,6 @@
 package com.github.felipearomani.myfood.model.entities;
 
-import com.github.felipearomani.myfood.model.entities.food.Food;
+import com.github.felipearomani.myfood.model.entities.menuitem.MenuItem;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,21 +26,17 @@ public class Order {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "food_id")
-    private Food food;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name =  "option_id")
-    private Option option;
+    private MenuItem menuItem;
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-            name = "additions_orders",
+            name = "orders_ingredients",
             joinColumns = @JoinColumn(name = "order_id"),
-            inverseJoinColumns = @JoinColumn(name = "addition_id")
+            inverseJoinColumns = @JoinColumn(name = "ingredient_id")
     )
-    private List<Addition> additions;
+    private List<Ingredient> customIngredients;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "shopping_cart_id")
     private ShoppingCart shoppingCart;
 

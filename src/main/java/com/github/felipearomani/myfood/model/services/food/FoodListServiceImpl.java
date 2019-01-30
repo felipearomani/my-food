@@ -1,6 +1,6 @@
 package com.github.felipearomani.myfood.model.services.food;
 
-import com.github.felipearomani.myfood.model.entities.food.FoodProjection;
+import com.github.felipearomani.myfood.model.entities.menuitem.projections.MenuItem;
 import com.github.felipearomani.myfood.model.exceptions.EmptyFoodsException;
 import com.github.felipearomani.myfood.model.repositories.food.FoodListRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +19,8 @@ public class FoodListServiceImpl implements FoodListService {
     }
 
     @Override
-    public Page<FoodProjection> get(Pageable pageable) {
-        Page<FoodProjection> paginatedFoods = foodListRepository.getPaginatedFoods(pageable);
+    public Page<MenuItem> get(Pageable pageable) {
+        Page<MenuItem> paginatedFoods = foodListRepository.getPaginatedFoods(pageable);
 
         if (paginatedFoods.getTotalElements() == 0) {
             throw new EmptyFoodsException();

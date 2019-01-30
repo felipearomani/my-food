@@ -1,6 +1,6 @@
 package com.github.felipearomani.myfood.web.controllers;
 
-import com.github.felipearomani.myfood.model.entities.food.FoodProjection;
+import com.github.felipearomani.myfood.model.entities.menuitem.projections.MenuItem;
 import com.github.felipearomani.myfood.model.services.food.FoodListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -21,8 +21,8 @@ public class FoodListController {
     }
 
     @GetMapping("/foods")
-    private ResponseEntity<Page<FoodProjection>> getList(Pageable pageable) {
-        Page<FoodProjection> foodListProjections = foodListService.get(pageable);
+    private ResponseEntity<Page<MenuItem>> getList(Pageable pageable) {
+        Page<MenuItem> foodListProjections = foodListService.get(pageable);
         return new ResponseEntity<>(foodListProjections, HttpStatus.OK);
     }
 }
